@@ -12,6 +12,27 @@ The idea to create such a device came from day to day usage of a Macbook with a 
 
 
 
+## Hardware
+
+![pcb assembly](./.assets/pcb_assembly.png)
+
+The devices hardware consists of the following main components:
+
+- TPS54229 – Buck converter that provides both 5V and 3.3V rails for the whole device. The 5V rails supplies all the devices that are connected to the switch USB ports,
+- TS3USB221 – USB Switch ICs; providing the needed host-switch capability,
+- GL850G – Main USB Hub Controller with supplied EEPROM on-board to customize its properties,
+- USB2241 – MicroSD Card Reader Controller,
+- IP6518 – Front USB Quick Charge 3.0 Compatible Controller,
+- STM32F103T8U6 – Brain of the device, providing an integrated USB controller connected directly to the main hub controller.
+
+
+
+## Project state
+
+Waiting for components to arrive from China. Unless Royal Mail decides eventually to deliver my packet, I am stuck at the current draft state. _Meh._
+
+
+
 ## License
 
 <p align="center"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></p>
