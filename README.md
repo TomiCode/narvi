@@ -6,7 +6,7 @@ Evolved from being just an idea to a completed prototype design. This repository
 
 ## Introduction
 
-**narvi** (*/ˈnɑːrvi/*) is a device that allows to share some USB enabled devices (like a keyboard, mice, serial port interfaces, etc.) with an integrated microSD card reader within just a tiny little box. Additionally it features a quick charge 3.0 front interface and an LED strip connector (for lighting the desk or whatever).
+**narvi** (*/ˈnɑːrvi/*) is a device that allows to share some USB enabled devices (like a keyboard, mice, serial port interface, etc.) and an integrated microSD card reader with two host devices within just a tiny little box. Additionally it features a quick charge 3.0 front interface and an LED strip connector (for desk lighting or whatever).
 
 The idea to create such a device came from day to day usage of a Macbook with a desktop PC next to. Manually switching the keyboard or mice connection most of the time is a pain in the ass. This eliminates such annoyances and allows to switch the host connection with just a button press (later on probably with a shortcut in the operating system, without even touching the device). Additionally it features an integrated microSD card reader for the selected host and an USB charger upfront with quick charge 3.0 capable interface without disturbing any of the USB communications.
 
@@ -14,16 +14,16 @@ The idea to create such a device came from day to day usage of a Macbook with a 
 
 ## Hardware
 
-![pcb assembly](./.assets/pcb_assembly.png)
+<p align="center"><img width="512" src="./.assets/pcb_top_assembly.png" alt="pcb top assembly"></p>
 
 The devices hardware consists of the following main components:
 
-- TPS54229 – Buck converter that provides both 5V and 3.3V rails for the whole device. The 5V rails supplies all the devices that are connected to the switch USB ports,
-- TS3USB221 – USB Switch ICs; providing the needed host-switch capability,
-- GL850G – Main USB Hub Controller with supplied EEPROM on-board to customize its properties,
-- USB2241 – MicroSD Card Reader Controller,
-- IP6518 – Front USB Quick Charge 3.0 Compatible Controller,
-- STM32F103T8U6 – Brain of the device, providing an integrated USB controller connected directly to the main hub controller.
+- **TPS54229** – Buck Converter ICs that provide both 5V and 3.3V rails for the whole device. The 5V rail supplies all devices that are connected through the USB ports,
+- **TS3USB221** – USB Switch ICs providing the host-switch capability,
+- **GL850G** – Main USB Hub Controller with supplied EEPROM on-board to customize its properties,
+- **USB2241** – MicroSD Card Reader Controller,
+- **IP6518** – Front USB Quick Charge 3.0 Compatible Controller,
+- **STM32F103T8U6** – Brain of the device, providing an integrated USB controller connected directly to the main hub controller.
 
 
 
