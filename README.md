@@ -1,14 +1,14 @@
 <p align="center"><img width="256" src="./.assets/logo.png" alt="narvi logo"></p>
 
-Evolved from being just an idea to a completed prototype design. This repository will contain schematics, rendered board views and also firmware sources with USB-HID driver apps to control some of the devices features from the user operating system.
+This project evolved from being just an idea to a complete prototype design. Within the repository, I will include schematics, board views and also firmware sources with USB-HID driver apps to control some of the device's features from the user operating system.
 
 
 
 ## Introduction
 
-**narvi** (*/ˈnɑːrvi/*) is a device that allows to share some USB enabled devices (like a keyboard, mice, serial port interface, etc.) and an integrated microSD card reader with two host devices within just a tiny little box. Additionally it features a quick charge 3.0 front interface and an LED strip connector (for desk lighting or whatever).
+**narvi** (*/ˈnɑːrvi/*) is a device that allows sharing any USB enabled devices (like a keyboard, mice, serial port interface, etc.) and provides an integrated microSD card reader for the host device within just a tiny form factor. Additionally, it features a QuickCharge 3.0 front interface and an LED strip connector (for desk lighting or anything else).
 
-The idea to create such a device came from day to day usage of a Macbook with a desktop PC next to. Manually switching the keyboard or mice connection most of the time is a pain in the ass. This eliminates such annoyances and allows to switch the host connection with just a button press (later on probably with a shortcut in the operating system, without even touching the device). Additionally it features an integrated microSD card reader for the selected host and an USB charger upfront with quick charge 3.0 capable interface without disturbing any of the USB communications.
+This idea evolved from the daily usage of a Macbook next to a desktop PC. To manually switch keyboard and mice connections is almost always a pain in the ass. Narvi eliminates those annoyances and allows to switch the host connection with just a button press. On top of that, it features a QuickCharge 3.0 capable interface for charging up your smartphone.
 
 
 
@@ -16,20 +16,22 @@ The idea to create such a device came from day to day usage of a Macbook with a 
 
 <p align="center"><img width="512" src="./.assets/pcb_top_assembly.png" alt="pcb top assembly"></p>
 
-The devices hardware consists of the following main components:
+The device's hardware consists of the following main components:
 
-- **TPS54229** – Buck Converter ICs that provide both 5V and 3.3V rails for the whole device. The 5V rail supplies all devices that are connected through the USB ports,
+- **TPS54229** – Buck Converter ICs that provide both 5V and 3.3V rails for the entire device. The 5V rail supplies each device that is connected through the USB ports,
 - **TS3USB221** – USB Switch ICs providing the host-switch capability,
 - **GL850G** – Main USB Hub Controller with supplied EEPROM on-board to customize its properties,
 - **USB2241** – MicroSD Card Reader Controller,
 - **IP6518** – Front USB Quick Charge 3.0 Compatible Controller,
-- **STM32F103T8U6** – Brain of the device, providing an integrated USB controller connected directly to the main hub controller.
+- **STM32F103T8U6** – Brain of the device. The integrated USB controller is directly connected to the main USB hub controller.
+
+For a more detailed view on the hardware, schematics, memory maps, and pcb designs take a look at the hardware [README](hardware/README.md).
 
 
 
-## Project state
+## Software
 
-Waiting for components to arrive from China. Unless Royal Mail decides eventually to deliver my packet, I am stuck at the current draft state. _Meh._
+Yeet? :nerd_face:
 
 
 
